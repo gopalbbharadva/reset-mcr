@@ -1,7 +1,8 @@
 import { useState } from 'react'
+import { DATA } from './Data'
 
 export const TransferList = () => {
-  const [items, setItems] = useState(data)
+  const [items, setItems] = useState(DATA)
   const itemSelectHandler = (name: string) => {
     setItems((prev) =>
       prev.map((item) =>
